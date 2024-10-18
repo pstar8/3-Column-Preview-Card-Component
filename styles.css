@@ -1,0 +1,151 @@
+/* Font - Big Shoulders Display */
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100..900&display=swap');
+
+/* Font - Lexand Deca */
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Big Shoulders Display', 'Lexend Deca', sans-serif;
+    background-color: hsl(0, 0%, 95%);
+    font-size: 15px;
+}
+
+/* Common Styles */
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main div{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    text-align: left;
+}
+
+main .sedans_container{
+     background-color: hsl(31, 77%, 52%);
+}
+
+main .suvs_container{
+     background-color: hsl(184, 100%, 22%);
+ }
+
+main .luxury_container{
+    background-color: hsl(179, 100%, 13%);
+}
+
+h1{
+    font-family: 'Big Shoulders Display';
+    font-weight: 700;
+    font-size: 2rem;
+    text-transform: uppercase;
+    color: hsl(0, 0%, 95%);
+}
+
+p{
+    font-family: 'Lexend Deca';
+    color: hsla(0, 0%, 100%, 0.75);
+    line-height: 1.5rem;
+}
+
+button{
+    font-family: 'Lexend Deca';
+    background-color:hsl(0, 0%, 95%);
+    padding: 15px 32px;
+    border: none;
+    cursor: pointer;
+    border-radius: 50px;
+    font-weight:400 ;
+    font-size: 16px;
+    margin-top:2rem ;
+    }
+
+    main .sedans_container button{
+        color: hsl(31, 77%, 52%);
+    }
+
+    main .luxury_container button{
+        color: hsl(179, 100%, 13%);
+    }
+
+    main .suvs_container button{
+        color: hsl(184, 100%, 22%);
+    }
+
+button:hover{
+    background-color: transparent;
+    border: 2px solid hsl(0, 0%, 95%);
+    color: hsl(0, 0%, 95%) !important;
+    transition: background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease;
+    padding:13px 28px ;
+}
+
+/* Mobile Design */
+@media only screen and (max-width: 999px) {
+    body{
+        padding: 4rem 2rem;
+    }
+     main{
+    display: flex;
+    flex-direction: column;
+    }
+
+    main div{
+    gap: 1.5rem;
+    padding: 4rem 2rem;
+    }
+
+    main .sedans_container{
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    }
+
+    main .luxury_container{
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+    }
+
+    p{
+        width: 225px;
+    }
+}
+
+/* Desktop Design */
+
+@media only screen and (min-width: 999px) {
+    body{
+        padding:10rem;
+    }
+     main{
+    display: flex;
+    flex-direction: row;
+    }
+
+    main div{
+    gap: 2rem;
+    padding: 4rem 2.5rem;
+    }
+
+    main .sedans_container{
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    }
+
+    main .luxury_container{
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px;
+    }
+
+    p{
+        width: 210px;
+    }
+}
