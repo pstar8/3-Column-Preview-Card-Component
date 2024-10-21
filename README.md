@@ -39,7 +39,7 @@ Users should be able to:
 
 ### Continued Development
 
-I would like to perfect my flexbox skils and responsiveness skills.
+I would like to perfect my flexbox skills and responsiveness skills.
 
 ## Author
 
