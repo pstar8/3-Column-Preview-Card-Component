@@ -43,7 +43,7 @@ main .luxury_container{
     background-color: hsl(179, 100%, 13%);
 }
 
-h1{
+h2{
     font-family: 'Big Shoulders Display';
     font-weight: 700;
     font-size: 2rem;
@@ -57,7 +57,7 @@ p{
     line-height: 1.5rem;
 }
 
-button{
+a {
     font-family: 'Lexend Deca';
     background-color:hsl(0, 0%, 95%);
     padding: 15px 32px;
@@ -67,21 +67,22 @@ button{
     font-weight:400 ;
     font-size: 16px;
     margin-top:2rem ;
+    text-decoration: none;
     }
 
-    main .sedans_container button{
+    main .sedans_container a{
         color: hsl(31, 77%, 52%);
     }
 
-    main .luxury_container button{
+    main .luxury_container a{
         color: hsl(179, 100%, 13%);
     }
 
-    main .suvs_container button{
+    main .suvs_container a{
         color: hsl(184, 100%, 22%);
     }
 
-button:hover{
+    a:hover{
     background-color: transparent;
     border: 2px solid hsl(0, 0%, 95%);
     color: hsl(0, 0%, 95%) !important;
